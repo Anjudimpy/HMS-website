@@ -1,0 +1,1521 @@
+
+<html lang="en">
+<head>
+<title>Hostel Management</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://sweetalert2.github.io/"></script>
+</head>
+<body class="hms">
+ <div class="container">
+ <div class="container_heading">
+  <div class="top-heading">
+  <div class="home">
+    <!-- <a href="#">Home</a>
+    <a href="#" >Dashboard</a>  -->
+  </div>
+  <div class="login">
+    <a href="#" id="home_btn"><i class="fa fa-home"></i></a>
+    <a href="#" > |</a>
+    <a href="#" id="dashboard_btn">Dashboard</a> 
+    <a href="#" > |</a>
+    <a href="#" id="login_btn"> Login</a>
+    <a href="#" > |</a>
+    <a href="#" id="register">Register</a>
+    <a href="#" > |</a>
+    <button class="edit_btn" id="data_edit_login">Edit</button>
+    <button onclick="saveContent()" class="edit_save_btn">Save</button>
+  </div></div>
+  <div class="logo">
+    <div class="imgLogo"> <img src="img/logo2.jpg" alt="" height="85px; width=85px;"> </div>
+    <div style="display: block;">
+      <div class="Tamilnadu">Tamilnadu <i class="fa-solid fa-award fa-flip fa-l" style="color: rgb(189, 3, 3);"></i></div>
+    <div class="h_p" style="text-align: center;">
+      <p >
+       BC/MBC/DNC/MW Hostel Management System</p></div>
+  </div></div>
+</div>
+  <div><div>
+    <div class="container_down" id="mainPage"> 
+   
+ <div class="heading">
+  <div style="margin: 0 180px; height: 20px;">
+  </div>
+</div>
+<!---------------------------------------------------------------------------->
+
+
+<!-- ----------------------------after heading------------------------------------- -->
+<div class="book">
+  <div class="cover">
+      <div class="page left-page background-container" id="bg-container">
+        
+        <div id="blink-container">
+          <div id="name"><i class="fa-solid fa-location-dot fa-s" style="color: #f4f5f6; margin-right: 10px;"></i> Tamilnadu</div>
+        
+          <div style="margin-top: 900px; width: 140px;"> 
+            <i class="fa-solid fa-children fa-flip fa-2xl" style="color: #f80a1e;"></i>
+          </div>
+
+        </div> 
+      </div></div>
+</div>
+
+<!--------------------------------------------------------------------------------------------->
+<div style="height:100% ; width: 100%;">
+<div class="content" style=" margin: -40px 0px 30px 50px;">
+<div class="content_list">
+  <ul>
+    <li><a href="#" id="edu_btn_id"><i class="fa-solid fa-hand-point-right fa-sm" ></i> Education Development</a></li>
+    <li><a href="#" id="eco_dev_sch_btn"> <i class="fa-solid fa-hand-point-right fa-sm"></i>Economic Development Schemes</a></li>
+    <li><a href="#"><i class="fa-solid fa-hand-point-right fa-sm"></i>General</a></li>
+    <li><a href="#"  id="listOfCaste"><i class="fa-solid fa-hand-point-right fa-sm"></i>List of Backward Classes, Backward Class Muslim, Most Backward Classes and
+    <li><i class="fa-solid fa-hand-point-right fa-sm" style="color: transparent;"></i>Denotified Communities</a></li>
+    <li><a href="#"><i class="fa-solid fa-hand-point-right fa-sm"></i>List of Hostel</a></li>
+    <li><a href="#"><i class="fa-solid fa-hand-point-right fa-sm"></i>List of Kallar Reclamation School</a></li>
+    <li><a href="#"><i class="fa-solid fa-hand-point-right fa-sm"></i>Details of the District Backward Classes and Minorities Walfare Officers</a></li>
+  
+
+<div class="content2" ><ul>
+  <div class="content_list2">
+    <li><a href="#"><i class="fa-solid fa-hand-point-right fa-sm"></i> Thanthai Periyar Award for Social Justice</a><br/li>   
+    <li><a href="#"><i class="fa-solid fa-hand-point-right fa-sm"></i> Tamil Nadu Backward Classes Commission</a></li>
+    <li><a href="#"> <i class="fa-solid fa-hand-point-right fa-sm"></i> Tamil Nadu Backward Classes Economic Development Corporation</a></li>
+    <li><a href="#"><i class="fa-solid fa-hand-point-right fa-sm"></i> Walfare Boards</a></li>
+    <li><a href="#"><i class="fa-solid fa-hand-point-right fa-sm"></i> Minorities Walfare</a></li>
+    <li><a href="#"><i class="fa-solid fa-hand-point-right fa-sm"></i> Tamil Nadu Minorities Economic Development Corporation</a></li>
+    <li><a href="#"> <i class="fa-solid fa-hand-point-right fa-sm"></i> Tamil Nadu State Minorities Commission</a></li>
+    <li><a href="#"><i class="fa-solid fa-hand-point-right fa-sm"></i> Tamil Nadu Waqf Board</a></li>
+    <li><a href="#"><i class="fa-solid fa-hand-point-right fa-sm"></i>Tamil Nadu State Haj</a></li>
+    
+    </ul>
+</ul></div></div></div>
+
+<div style="height: 350px;"></div>
+ <div style="height: 100px; margin-top:-60%; margin-left: 200px; ">
+  <i class="fa-solid fa-book-open fa-spin fa-2xl" style="color: #f8f2f5; width: 150px;"></i></div> 
+
+  <div style="height: 100px; margin-top: 200px; margin-left: 1000px; ">
+    <i class="fa-solid fa-book-open fa-spin fa-2xl" style="color: #f3f8f8; width: 150px;"></i></div> 
+
+</div>
+
+<!-------------------------------------Dashboard--------------------------------------->
+
+<div class="dashboard" id="dashboardId">
+  <div class="dashboard_container">
+    <div class="d_heading"><p>Dashboard</p>
+    </div>
+
+    <div class="d_details">
+
+      <div class="detail">
+        <div class="detail_small">
+          <i class="fa-solid fa-hotel fa-beat fa-lg" style="color: #056961;  text-shadow: 2px 2px 4px rgba(8, 35, 37, 0.329);
+          "></i>
+          <p >Total Hostels</p>
+            1350
+        </div>
+      </div>
+
+      <div class="detail">
+        <div class="detail_small">
+          <i class="fa-solid fa-hotel fa-beat fa-lg" style="color:#056961;   text-shadow: 2px 2px 4px rgba(8, 35, 37, 0.329);
+          "></i>
+          <p >Boys Hostels <i class="fa-solid fa-child fa-sm" style="color: #118bf0f8;"></i></p>
+            841
+        </div>
+      </div>
+
+      <div class="detail">
+        <div class="detail_small">
+          <i class="fa-solid fa-hotel fa-beat fa-lg" style="color: #056961;  text-shadow: 2px 2px 4px rgba(8, 35, 37, 0.329);
+          "></i>
+          <p >Girls Hostels <i class="fa-sharp fa-solid fa-child-dress fa-sm" style="color: #e065a9;"></i></p>
+            509
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------Details 1----------------------------->
+<div class="detail_2">
+
+  <div class="d_heading2"><p> Sanctioned Strength</p>
+  </div>
+
+  <div class="d_details">
+
+    <div class="detail">
+      <div class="detail_small">
+        <i class="fa-solid fa-hotel fa-beat fa-lg" style="color: #f8560a;  text-shadow: 2px 2px 4px rgba(8, 35, 37, 0.329);
+        "></i>
+        <p >Total Strength</p>
+          86999
+      </div>
+    </div>
+
+    <div class="detail">
+      <div class="detail_small">
+        <i class="fa-solid fa-hotel fa-beat fa-lg" style="color:#f8560a;  text-shadow: 2px 2px 4px rgba(8, 35, 37, 0.329);
+        "></i>
+        <p >Boys Strength <i class="fa-solid fa-child fa-sm" style="color: #118bf0f8;"></i></p>
+           53649
+      </div>
+    </div>
+
+    <div class="detail">
+      <div class="detail_small">
+        <i class="fa-solid fa-hotel fa-beat fa-lg" style="color:#f8560a;  text-shadow: 2px 2px 4px rgba(8, 35, 37, 0.329);
+        "></i>
+        <p >Girls Strength <i class="fa-sharp fa-solid fa-child-dress fa-sm" style="color: #e065a9;"></i></p>
+          33350
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!----------------------------details 2-------------------------------->
+<div class="detail_2">
+
+  <div class="d_heading2"><p> College's Students Hostels</p>
+  </div>
+
+  <div class="d_details">
+
+    <div class="detail">
+      <div class="detail_small">
+        <i class="fa-solid fa-hotel fa-beat fa-lg" style="color: #075bf7;  text-shadow: 2px 2px 4px rgba(8, 35, 37, 0.329);
+        "></i>
+        <p >Total Hostels</p>
+          290
+      </div>
+    </div>
+
+    <div class="detail">
+      <div class="detail_small">
+        <i class="fa-solid fa-hotel fa-beat fa-lg" style="color:#075bf7; text-shadow: 2px 2px 4px rgba(8, 35, 37, 0.329);
+        "></i>
+        <p >Boys Hostels <i class="fa-solid fa-child fa-sm" style="color: #118bf0f8;"></i></p>
+           149
+      </div>
+    </div>
+
+    <div class="detail">
+      <div class="detail_small">
+        <i class="fa-solid fa-hotel fa-beat fa-lg" style="color: #075bf7;  text-shadow: 2px 2px 4px rgba(8, 35, 37, 0.329);
+        "></i>
+        <p >Girls Hostels <i class="fa-sharp fa-solid fa-child-dress fa-sm" style="color: #e065a9;"></i></p>
+          141
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--------------------------details 3---------------------------------->
+<div class="detail_2">
+
+  <div class="d_heading2"><p> School's Students Hostels</p>
+  </div>
+
+  <div class="d_details">
+
+    <div class="detail">
+      <div class="detail_small">
+        <i class="fa-solid fa-hotel fa-beat fa-lg" style="color: #056961;  text-shadow: 2px 2px 4px rgba(8, 35, 37, 0.329);
+        "></i>
+        <p >Total Hostels</p>
+          1060
+      </div>
+    </div>
+
+    <div class="detail">
+      <div class="detail_small">
+        <i class="fa-solid fa-hotel fa-beat fa-lg" style="color: #056961;  text-shadow: 2px 2px 4px rgba(8, 35, 37, 0.329);
+        "></i>
+        <p >Boys Hostels <i class="fa-solid fa-child fa-sm" style="color: #118bf0f8;"></i></p>
+           692
+      </div>
+    </div>
+
+    <div class="detail">
+      <div class="detail_small">
+        <i class="fa-solid fa-hotel fa-beat fa-lg" style="color: #056961;  text-shadow: 2px 2px 4px rgba(8, 35, 37, 0.329);
+        "></i>
+        <p >Girls Hostels <i class="fa-sharp fa-solid fa-child-dress fa-sm" style="color: #e065a9;"></i></p>
+          368
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div> <!-----dashboard closed div-->
+<!--------------------------------------------------------------->
+<div class="login_display" id="login_icon">
+  <div class="Picon" >
+<div class="IconForm" id="std_icon">
+  <div class="detail_small" >
+    <img src="img/std.svg" height="82px" width="82px" >
+    <p>Student</p>
+  </div>
+</div>
+
+<div class="IconForm" id="admin_icon" >
+  <div class="detail_small" id="admin_icon" style="background-color: rgba(231, 194, 71, 0.315); " >
+    <img src="img/warden.svg" height="82px" width="82px" >
+    <p>Warden</p>
+  </div>
+</div>
+
+<div class="IconForm" id="officer_icon" >
+  <div class="detail_small" style="background-color: rgba(231, 194, 71, 0.315); ">
+    <img src="img/warden.svg" height="82px" width="90px" >
+    <p>District Officer</p>
+  </div>
+</div>
+
+<div class="IconForm" id="Commissioner_icon" >
+  <div class="detail_small">
+    <img src="img/admin.svg" height="72px" width="80px" >
+    <p>Commissioner/ State Authority</p>
+  </div>
+</div>
+
+</div>
+                              <!--------std login page-------->
+<div class="login_form" id="login_form">
+  <p class=" login_page_heading"> Student Login Page</p>
+<div class="login_details">
+<input type="text" placeholder="User Name"><br><br>
+<input type="password" placeholder="Password"><br><br><br><br>
+<a href="#" class="loginPage_btn" id="std_login_btn">Login</a><br><br>
+<a href="#" style="color: rgb(20, 129, 129);">Forgot password</a>
+</div></div>
+
+                            <!--------warden login page-------->
+
+<div class="login_form" id="Admin_login_form">
+<p class=" login_page_heading"> Warden Login Page</p>
+<div class="login_details">
+<input type="text" placeholder="User Name"><br><br>
+<input type="password" placeholder="Password"><br><br><br><br>
+<a href="#" class="loginPage_btn" id="warden_login_btn">Login</a><br><br>
+<a href="#" style="color: rgb(20, 129, 129);">Forgot password</a>
+</div></div>
+                         <!--------------district officer login page------------------->
+<div class="login_form" id="Officer_login_form">
+<p class=" login_page_heading"> District Officer Login Page</p>
+<div class="login_details">
+<input type="text" placeholder="User Name"><br><br>
+<input type="password" placeholder="Password"><br><br><br><br>
+<a href="#" class="loginPage_btn">Login</a><br><br>
+<a href="#" style="color: rgb(20, 129, 129);">Forgot password</a>
+</div></div>
+   <!--------------Commissioner login page------------------->
+<div class="login_form" id="Commissioner_login_form">
+  <p class=" login_page_heading">Commissioner/ State Authority Login Page</p>
+  <div class="login_details">
+  <input type="text" placeholder="User Name"><br><br>
+  <input type="password" placeholder="Password"><br><br><br><br>
+  <a href="#" class="loginPage_btn " id="EditPermissionBtn1">Login</a><br><br>
+  <a href="#" style="color: rgb(20, 129, 129);">Forgot password</a>
+  </div></div>
+
+</div>
+
+<!------------------------------------registration page------------------------------------------------>
+  <div class="register_display " id="registration_form_id">
+    <p>Registration Form</p>
+<div class="registration">
+  <div>
+    <label> First Name</label><br>
+    <input type="text">
+  </div>
+  <div>
+    <label>last Name</label><br>
+    <input type="text">
+  </div>
+  <div>
+    <label> Contact Number</label><br>
+    <input type="text">
+  </div>
+  <div>
+    <label>School/College Name</label><br>
+    <input type="text">
+  </div>
+  <div>
+    <label>Student Id</label><br>
+    <input type="text">
+  </div>
+  <div>
+    <label> Email Id</label><br>
+    <input type="email" placeholder="@gmal.com">
+  </div>
+  <div>
+    <label> Aadhar Number</label><br>
+    <input type="text">
+  </div>
+  <div>
+    <label for="gender">Gender</label><br>
+    <select>
+      <option>Select</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select><br>
+  </div>
+  <div>
+    <label for="gender">Category</label><br>
+    <select>
+      <option>Select</option>
+      <option>General</option>
+      <option>SC</option>
+      <option>ST</option>
+      <option>OBC-NC</option>
+      <option>EWS</option>
+    </select><br>
+  </div> 
+  <div>
+    <label>Password</label><br>
+    <input type="password" ><br><br>
+  </div>
+  <div>
+    <label>Confirm Password</label>
+    <input type="password" ><br><br>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div><button>Submit</button>  <button>Reset</button></div>
+ 
+  </div>
+
+      
+</div><!-------close registration page---->
+
+
+
+<!----Kallar reclamation schools-->
+<div class="hostels_details" id="Kallar_details">
+  <div class="clsoe_btn_div">
+  <button id="kallar_clsoe_btn"><i class="fa-solid fa-square-xmark fa-xl" style="color: #cf0707c5;"></i>
+  </button></div>
+  <p class="hostel_details_heading ">Kallar Reclamation Schools</p> 
+<p class="Kallar_details editablePara" contenteditable="false"> 
+</p>  
+<table border="1" class="Kallar_table">
+<tr>
+<th rowspan="2" class="editablePara"></th>
+<th rowspan="2"class="editablePara"></th>
+<th rowspan="2" class="editablePara"></th>
+<th colspan="2" class="editablePara"></th>
+<th rowspan="2"class="editablePara"></th>
+</tr>
+<tr>
+<th class="editablePara"></th> <th class="editablePara"></th>
+</tr>
+<tr>
+<td class="editablePara"></td>  <td class="editablePara"></td>
+<td class="editablePara"></td>  <td class="editablePara"></td> 
+<td class="editablePara"></td>   <td class="editablePara"></td>
+</tr>
+<tr>
+<td class="editablePara"></td>  <td class="editablePara"></td>
+<td class="editablePara"></td>  <td class="editablePara"></td> 
+<td class="editablePara"></td>   <td class="editablePara"></td>
+</tr>
+<tr>
+<td class="editablePara"></td>  <td class="editablePara"></td>
+<td class="editablePara"></td>  <td class="editablePara"></td> 
+<td class="editablePara"></td>   <td class="editablePara"></td>
+</tr>
+<tr>
+<td class="editablePara"></td>  <td class="editablePara"></td>
+<td class="editablePara"></td>  <td class="editablePara"></td> 
+<td class="editablePara"></td>   <td class="editablePara"></td>
+</tr>
+<tr>
+<td class="editablePara"></td>  <td class="editablePara"></td>
+<td class="editablePara"></td>  <td class="editablePara"></td> 
+<td class="editablePara"></td>   <td class="editablePara"></td>
+</tr>
+<tr>
+<th class="editablePara"></th>  <th class="editablePara"></th>
+<th class="editablePara"></th>  <th class="editablePara"></th> 
+<th class="editablePara"></th>   <th class="editablePara"></th>
+</tr>
+</table>
+<h3 style="color: rgb(253, 21, 21);">Benefits available to the students of Kallar Reclamation Schools.</h3>
+
+<p class="Kallar_details editablePara" contenteditable="false">
+</p>
+
+</div>
+
+<!---------------------------Education Development--------------------------->
+<div class="education" id="education_id">
+<div class="edu_heading">
+  <div class="edu_img">
+  <img src="img/education.jpg" alt="" height="300px" width="300px">
+  </div>
+
+  <div class="edu_content">
+    <h2 class="link_Page_heading  editablePara">Education Development</h2>
+    <p class="editablePara">
+      Education forms the basis for the economic progress of a society. The State Government has foramed many schemes for the educational advancement of the 
+      Backward Classes,Most Backward Classes and Denotified Communities and Minorities. The reservation policy has paved the way for them to join educational institution. The scholarship scheme provides
+       financial Assistance to poor Students to  get education.
+    </p>
+  </div>
+</div>
+<div class="Picon"  style="margin: 0; padding:20px; gap: 40px;">
+    <div class="edu_btn" id="hostel">
+      <div class="edu_btn_small" >
+          <i class="fa-solid fa-hotel  fa-2xl" style="color: #0beedb;  text-shadow: 2px 2px 4px rgba(8, 35, 37, 0.329);
+          "></i> <i class="fa-solid fa-children fa-xl" style="color: #09f7e3;"></i>
+      <p>Hostel</p>
+      </div>
+         </div>
+    
+    
+    <div class="edu_btn" id="scholarship_btn" >
+      <div class="edu_btn_small" id="admin_icon" style="background-color: rgba(231, 194, 71, 0.315); " >
+        <i class="fa-solid fa-graduation-cap fa-2xl" style="color: #434444;"></i>
+        <p>scholarship Schemes</p>
+      </div>
+    </div>
+    
+    <div class="edu_btn" id="bording_grant_btn" >
+      <div class="edu_btn_small">
+        <i class="fa-solid fa-hotel fa-2xl" style="color: #1f5142;"></i>
+        <p>Bording Grants</p>
+      </div>
+    </div>
+
+    <div class="edu_btn " id="rural_scheme_btn" >
+        <div class="edu_btn_small" id="admin_icon" style="background-color: rgba(231, 194, 71, 0.315); " >
+          <i class="fa-solid fa-house fa-2xl" style="color: #f77b08;"></i><i class="fa-sharp fa-solid fa-child-dress fa-xl" style="color: #c9316e;"></i>
+          <p>Rural 
+            Girls Incentive Schemes</p>
+        </div>
+      </div>
+      
+      <div class="edu_btn" id="distribution_freeCycle_btn" >
+        <div class="edu_btn_small">
+          <i class="fa-solid fa-bicycle fa-2xl" style="color: #0818f7;"></i>
+          <p>Distribution of Free Bicyles</p>
+        </div>
+      </div>
+
+      <div class="edu_btn" id="Kallar_btn" >
+          <div class="edu_btn_small" id="admin_icon" style="background-color: rgba(231, 194, 71, 0.315); " >
+            <i class="fa-solid fa-school fa-2xl" style="color: #3f1212;"></i>
+            <p>Kallar Reclamation Schools</p>
+          </div>
+        </div>
+    
+    </div>
+<!------------bording_grand------------>    
+<div class="bording_grant " id="bording_grant_details" style="display: none;">
+  <i id="bording_grant_clsBtn" class="fa-solid fa-xmark" style="color: #998e8d;"></i>
+<div class="bording_grant_inner">
+  <h2 class="editablePara">Boarding Grants:</h2>
+  <table border="1">
+    <tr>
+      <th class="editablePara"></th>
+      <th class="editablePara"></th>
+      <th class="editablePara"></th>
+    </tr>
+    <tr>
+      <td class="editablePara">
+      </td>
+      <td class="editablePara" >parental income should not exceed Rs. 2,00,000/- per annum</td>
+      <td>Administrative head of the Private Hostel concerned (through District Backward Classes and
+        Minorities Welfare Officers) Students need not apply separately
+      </td>
+    </tr>
+  </table>
+
+</div>
+</div>
+<!-------------rural girls's scheme-------->
+<div class="bording_grant" id="girlsScheme" style="display: none;">
+  <i id="girlsScheme_clsBtn" class="fa-solid fa-xmark" style="color: #998e8d;"></i>
+  <div class="bording_grant_inner">
+    <h3>Rural Girls Incentive Scheme: </h3>
+    (Most Backward Classes and Denotified Community Girls only)
+    <table border="1">
+      <tr>
+        <th>Incentive</th><th>Eligibility</th><th>Officials to be contacted</th>
+      </tr>
+      <tr>
+        <td>3rd Std to 5th Std Rs.500/-</br>6th Std - Rs.1000/- per annum.
+        </td>
+        <td><ol>
+          <li>Parental income limit is increased as Rs.1,00,000/- per annum w.e.f 2021-22.</li>
+          <li>Students studying in Government/ Government aided schools in Rural areas.</li>
+          <li>For those belonging to MBC/ DNC only.</li>
+          <li>Preference will be given to Girl Children of Widows/ Destitutes.</li>
+        </ol>
+        </td>
+       <td>Headmaster of the Government / Government aided Schools concerned in Rural areas.</td>
+      </tr>
+    </table>
+    This scheme is implement in all the Districts except Chennai District.
+  </div>
+  </div>
+
+  <!---free -cycle distributaion---->
+
+  <div class="bording_grant" id="FreeCycleScheme" style="display: none;">
+    <i id="FreeCycle_clsBtn" class="fa-solid fa-xmark" style="color: #998e8d;"></i>
+    <div class="bording_grant_inner">
+      <h2 >Distribution of Free Bi-Cycles</h2>
+Bicycles are supplied to 11th standard student of Government, Government aided and partially aided schools 
+irrespective of income and community.
+<h3>Eligibility</h3> 
+<ul>
+  <li>Should be the students (Boys & Girls) of +1 in Government, Government aided and partially aided school
+    (this concession is applicable to the Free bus pass holders also.)
+  </li>
+  <li>No other condition to avail this concession.</li>
+  <li>Students staying in the Hostel situated  in the school premises and staying in Residential Schools 
+     are not eligible for getting  free Bi-cycles.
+  </li>
+</ul>  
+<h3>Officials to be contacted</h3>  
+<ul>
+  <li>Concerned  School Headmaster.</li>
+</ul>
+
+    </div>
+    </div>
+
+  
+</div>
+
+
+<!--hostel-->
+<div class="hostels_details" id="hostels_details_id">
+  <div class="clsoe_btn_div">
+  <button id="hostel_clsoe_btn"><i class="fa-solid fa-square-xmark fa-xl" style="color: #cf0707c5;"></i></button></div>
+<p class="hostel_details_heading ">Details of hostels and students strength</p>  
+  <table border="1"  class="reservation_table">
+<tr>
+<th rowspan="2">SI. No</th> <th rowspan="2">Department</th><th rowspan="2">Hostels</th>
+<th colspan="3">No. of Hostels</th><th colspan="3">Sanctioned Strength</th>
+</tr>
+<tr>
+  <th>Boys</th><th>Girls</th><th>Total</th><th>Boys</th><th>Girls</th><th>Total</th>
+</tr>
+<tr>
+  <td rowspan="3">1</td><td rowspan="3">BC</td><td>College</td><td>85</td><td>66</td><td>155</td>
+ <td>7740</td><td>5260</td><td>13000</td>
+</tr>
+<tr>
+<td>School</td><td>369</td><td>205</td><td>574</td><td>20940</td><td>11520</td><td>32460</td>
+ </tr>
+<tr>
+ <td>Total</td><th>454</th><th>271</th><th>725</th><th>28680</th><th>16780</th><th>45460</th>
+</tr>
+<tr><td rowspan="3">2</td><td rowspan="3">MBC</td><td>College</td>
+ <td>50</td><td>53</td><td>103</td> <td>4250</td><td>4765</td><td>9015</td>
+</tr>
+<tr>
+<td>School</td><td>50</td><td>53</td><td>103</td> <td>4250</td><td>4765</td><td>9015</td>
+</tr>
+<tr>
+<td>Total</td><th>286</th><th>166</th><th>452</th><th>16950</th><th>10990</th><th>27940</th>
+</tr>
+<tr><td rowspan="3">3</td><td rowspan="3">DNC</td><td>College</td>
+  <td>13</td><td>9</td><td>22</td> <td>1105</td><td>740</td><td>1845</td>
+ </tr>
+ <tr>
+ <td>School</td><td>87</td><td>46</td><td>133</td> <td>6814</td><td>3440</td><td>10254</td>
+ </tr>
+ <tr>
+ <td>Total</td><th>100</th><th>55</th><th>155</th><th>7919</th><th>4180</th><th>12099</th>
+ </tr>
+
+ <tr><td rowspan="3">4</td><td rowspan="3">MW</td><td>College</td>
+  <td>1</td><td>13</td><td>14</td> <td>100</td><td>1050</td><td>1150</td>
+ </tr>
+ <tr>
+ <td>School</td><td>0</td><td>4</td><td>4</td> <td>0</td><td>350</td><td>350</td>
+ </tr>
+ <tr>
+ <td>Total</td><th>286</th><th>166</th><th>452</th><th>16950</th><th>10990</th><th>27940</th>
+ </tr>
+
+ <tr><td rowspan="3"></td><td rowspan="3"></td><td>College</td>
+  <td>149</td><td>141</td><td>290</td> <td>13195</td><td>11815</td><td>25010</td>
+ </tr>
+ <tr>
+ <td>School</td><td>692</td><td>368</td><td>1060</td> <td>40454</td><td>21535</td><td>61989</td>
+ </tr>
+ <tr >
+ <th rowspan="2">Grand Total</th><th rowspan="2">841</th><th rowspan="2">509</th>
+ <th rowspan="2">1350</th><th rowspan="2">53649</th><th rowspan="2">33350</th><th rowspan="2">86999</th>
+ </tr>
+</table>
+
+<div class="hostel_eligibilty">
+  <p>Eligibility Criteria</p>
+  <div style="display: flex">
+    <div class="eligiblity_rule">
+      <div style="height: 9% ; padding: 3px 10px;"  >
+      College Hostel</div>
+      <ol>
+          <li> Student studying in Diploma, U.G/ P.G courses</li>
+          <li>Annual Parental income should not exceed Rs.2,00,000/-.</li>
+          <li>The student should be residing at a distance of more than 8 Kilometers 
+            from the educational institution. (This condition is not applicable to Girl Sudents)</li>
+        </ol>   
+    </div>
+    <div class="eligiblity_rule">
+<div style="height: 9% ; padding: 3px 10px;">School Hostel
+ </div>
+ <ol>
+    <li>Sudents studying in classes from 4th standard to 12th standard.</li>
+    <li>Annual Parental income should not exceed Rs.2,00,000/-.</li>
+    <li>The student should be residing at a distance of more than 8 Kilometers 
+        from the educational institution. (This condition is not applicable to Girl Sudents)</li>
+  </ol>
+    </div>
+  </div>
+</div>
+
+<div style="margin-bottom: 100px">
+    <p class="hostel_details_heading">Reservation in hostel admission</p>  
+ <table border="1" class="reservation_table">
+ <tr>
+   <th>Hostels</th> <th>Community</th> <th>Alloted Percentage</th>
+ </tr>
+ <tr>
+  <th rowspan="5">Backward Classes Hostels</th><td>Backward Classes</td><td>60%</td>
+ </tr>
+ <tr>
+   <td>Most Backward Classes/ Denotified Communities</td><td>20%</td>
+ </tr>
+ <tr>
+   <td>Scheduled Castes/ Scheduled Tribes</td><td>15%</td>
+ </tr>
+ <tr>
+   <td>Other</td><td>5%</td>
+ </tr>
+ <tr>
+   <th>Total</th><th>100%</th>
+ </tr>
+
+ <tr>
+    <th rowspan="5"> Most Backward Classes Hostels</th><td>Most Backward Classes</td><td>60%</td>
+   </tr>
+   <tr>
+     <td>Backward Classes/ Denotified Communities</td><td>20%</td>
+   </tr>
+   <tr>
+     <td>Scheduled Castes/ Scheduled Tribes</td><td>15%</td>
+   </tr>
+   <tr>
+     <td>Other</td><td>5%</td>
+   </tr>
+   <tr>
+     <th>Total</th><th>100%</th>
+   </tr>
+
+   <tr>
+      <th rowspan="5">Denotified Communities Hostels</th><td>Denotified Communities</td><td>60%</td>
+     </tr>
+     <tr>
+       <td>Backward Classes/ Most Backward Classes</td><td>20%</td>
+     </tr>
+     <tr>
+       <td>Scheduled Castes/ Scheduled Tribes</td><td>15%</td>
+     </tr>
+     <tr>
+       <td>Other</td><td>5%</td>
+     </tr>
+     <tr>
+       <th>Total</th><th>100%</th>
+     </tr>   
+ </table>   
+</div>
+
+<!--hoste food-->
+<div class="hoste_food">
+<h3> Food Charges</h3>
+<div style="margin-left:40px; ">
+<h4 >School Hostel</h4> <p> -Rs.1000/- per student per month for 10 months</p>
+<h4 >College Hostel</h4> <p> -Rs.1100/- per student per month for 10 months</p>
+<p>The menu provided to Hostellers has been revised as below and orders have been issued to implement the same with effect from 03.06.2022</p>
+</div><br>
+<ol type="I" style="font-weight:700; ">
+  <li>Breakfast (School and College Hostels)</li><br>
+<table border="1" class="food_table">
+    <tr>
+      <th>Day</th><th>Menu Details</th>
+    </tr>
+<tr>
+  <td>Mondey</td><td>Semiya Kitchadi, Tomato Chutney or Sambar</td>
+</tr>
+<tr>
+  <td>Tuesday</td><td>Poori, Masala</td>
+</tr>
+<tr>
+  <td>Wednesday</td><td>Idly, Sambar, Chutney</td>
+</tr>
+<tr>
+  <td>Thursday</td><td>Idiyappam, Green Peas Kurma or Coconut Milk</td>
+</tr>
+<tr>
+  <td>Friday</td><td>Pongal (or) Varagu Pongal (or) Thinai rice pongal, Brinjal Gothsu and Vada</td>
+</tr>
+<tr>
+  <td>Saturday</td><td>Rava Kitchadi, Coconut Chutney</td>
+</tr>
+<tr>
+  <td>Sunday</td><td>Dosa or Navadaniya Dosa, Sambar and Chutney</td>
+</tr>
+  </table><br>
+<li> Lunch (School and College Hostels)</li>  <br>
+<table border="1" class="food_table">
+    <tr>
+      <th>Day</th><th>Menu Details</th>
+    </tr>
+<tr>
+  <td>Mondey</td><td>Rice, Sambar, 2 types of Poriyal, Rasam, Buttermilk, Egg (or)
+    Rice, Sambar, 1 Poriyal, Rasam, Buttermilk and Egg masala
+  </td>
+</tr>
+<tr>
+  <td>Tuesday</td><td>Vegetable Biryani, Vegetable Kurma and Egg</td>
+</tr>
+<tr>
+  <td>Wednesday</td><td>Rice, Mutton/ Chicken Kurma (or) Mutton/ Chicken gravy, Poriyal and Buttermilk</td>
+</tr>
+<tr>
+  <td>Thursday</td><td>Tomato Rice (or) Lemon Rice (or) Curd Rice, Potato Poriyal, Egg</td>
+</tr>
+<tr>
+  <td>Friday</td><td>Rice, Karakulambu, Poriyal/ Kootu, Rasam, Buttermilk, Egg </td>
+</tr>
+<tr>
+  <td>Saturday</td><td>Pudhina Rice/ Carrot Rice/ Karuveppilai Rice, Egg, Appalam/ Paruppu thovailyal</td>
+</tr>
+<tr>
+  <td>Sunday</td><td>Rice, Egg Kurma, Rasam and Buttermilk</td>
+</tr>
+  </table><br>
+
+  <li> Dinner (School and College Hostels)</li>  <br>
+<table border="1" class="food_table">
+    <tr>
+      <th>Day</th><th>Menu Details</th>
+    </tr>
+<tr>
+  <td>Mondey</td><td>Chappathi, Kurma</td>
+</tr>
+<tr>
+  <td>Tuesday</td><td>Idiyappam, Kurma (or) Vegetable Stew</td>
+</tr>
+<tr>
+  <td>Wednesday</td><td>Vegetable Pulav, Kurma/ Raitha</td>
+</tr>
+<tr>
+  <td>Thursday</td><td>Oothappam, Chutney,Sambar</td>
+</tr>
+<tr>
+  <td>Friday</td><td>Wheat Dosa, Tomato Chutney </td>
+</tr>
+<tr>
+  <td>Saturday</td><td>Rice, Sambar, Poriyal, Rasam</td>
+</tr>
+<tr>
+  <td>Sunday</td><td>Tomato Rice (or) Sambar Rice, Varuval</td>
+</tr>
+  </table><br>
+  <li> Mutton and Chicken (Weekly once)</li>  <br>
+  <table border="1" class="food_table">
+  <tr>
+    <th>Day</th><th>College Hostel</th><th>School Hostel</th>
+  </tr>
+  <tr>
+    <td>1st & 3rd week Wednesday </td><td>Mutton - 80 gms</td><td>Mutton - 80 gms</td>
+  </tr>
+  <tr>
+      <td>2st & 4th week Wednesday </td><td>Chicken - 120 gms</td><td>Chicken - 100 gms</td>
+    </tr>
+    </table><br>
+ <li>Egg/ Banana (School and College HostelS)</li>  
+ <P style="font-weight: 300;">The HostelS Boards are also served eggs along with the daily menu. Monthly 20 eggs at the rate of 5 eggs per week / per Boarder
+   are provided. Bananas are provided to boarders who do not prefer eggs
+ </P>
+ <li> Evening snacks</li>
+ <p style="font-weight: 300;">Boiled pulses (Sundal) and Sukkumalli Coffee or Palm Jaggery Tea supplied.</p>
+</ol><br>
+<div class="hostel_facility">
+  <h3 style="padding:10px 10px 0 10px; color: white; font-size: 21px;">Facilities available for Hostel students</h3>
+  <ol>
+    <li>Two Tamil and one English newspaper are provided for each hostel.</li>
+    <li>Career Guidance Programmes are conducted to create awareness among the 10th std, 12th std and College students about Various
+      job opportunities available. Every year, this Career Guidance Programme is conducted through Employment and Training Department.
+    </li>
+    <li>Special guides are provided free of cost to the boarders studying in 10th and 12th standard to improve thier
+      performance in public examination.
+    </li>
+<li> The Boarders of Hostels studying upto XII standard are supplied with all text books free of cost by the Department of School Education.</li>    
+<li>Four sets of uniforms are given to the Hostel Boarders studying from IV to X standard, as per the colour and
+  pattern adopted under Nutritious Meal Scheme from the year 2013-14.
+</li>
+<li>Colour television, play materials, water purifier, book shelves, wet-grinder, fir extinguishers, idly steamer, library books 
+  and electric insect destroyer are supplied to the hostels. In additon, inverter, reference books and two-tier bunk cots are supplied
+  to the college hostels.</li>
+<li>Stainless steel plates and tumblers are provided to all Hostel boarders. Woolen sweaters are provided to the boarders of hostels
+  located in Hill stations. The following benefits are also given to them.
+  <ol type="a" style="margin-top: 0;">
+    <li>Mats are provided to School Hostel Boarders every year.</li>
+    <li>Jamakkalam are provided to first year College Boarders.</li>
+    <li>Bedsheets are provided once in two years for both school and Hostel Boarders.</li>
+  </ol>
+</li>
+<li>Three medical camps are conducted for school Hostel Boarders every year.</li>
+
+</ol>
+</div>
+
+
+</div>
+  
+</div>
+
+
+
+
+
+<!------------------------------Economical development Schemes------------------------------>
+<div class="eco_dev_sch" id="eco_dev_sch_Id">
+
+    <div class="edu_heading">
+        <div class="edu_img">
+        <img src="img/img2.jpg" alt="" height="300px" width="300px">
+        </div>
+      
+        <div class="edu_content">
+          <h2>Economic Development Schemes</h2>
+          <p>
+           For the economic advancement of Backward Classes, Most Backward Classes and Denotified Communities,
+           iron boxes and motorised sewing machines are distributed free of cost by this Department. Lone are provided
+           through TABCEDCO and TAMCO for Various income generating activites.
+          </p>
+        </div>
+      </div>
+      <div class="Picon" id="iron" style="margin: 0 15px; padding:20px; gap: 80px; ">
+          <div class="edu_btn">
+            <div class="edu_btn_small" style="background-color: rgba(231, 194, 71, 0.315); " >
+                <img src="img/i.png" height="60px" width="60px" >
+      
+            </div>
+            <p>Free Iron boxes </p>
+               </div>
+          
+          
+          <div class="edu_btn">
+            <div class="edu_btn_small" style="padding-top: 15px;">
+                <img src="img/laudry.png" height="90px" width="90px" >
+            </div>
+            <p>Modern Laundry</p>
+          </div>
+          
+          <div class="edu_btn"  >
+            <div class="edu_btn_small" style="padding-top: 25px; background-color: rgba(231, 194, 71, 0.315); ">
+                <img src="img/m3.webp" height="60px" width="60px" >
+                </div>
+                <p>Motorised Sewing Machines</p>     
+          </div>
+      
+          <div class="edu_btn"  >
+              <div class="edu_btn_small" id="admin_icon"  >
+                  <i class="fa-solid fa-shirt fa-2xl" style="color: #ef0ff7;"></i>
+                  <i class="fa-solid fa-shirt fa-2xl" style="color: #0f35f0;"></i>
+                  <i class="fa-solid fa-shirt fa-2xl" style="color: #f75307;"></i>
+              </div>
+             <p>Readymade Garment Unit</p>
+            </div>
+            
+            <div class="edu_btn">
+              <div class="edu_btn_small" style="padding-top: 15px;background-color: rgba(231, 194, 71, 0.315); ">
+                  <img src="img/hh.png" height="90px" width="90px" >
+                </div>
+                <p>Free House Site Pattas</p>
+            </div>
+          
+          </div>
+          <!----------------------------------->
+<div class = "Scheme_free" id="ïron_details">
+    <p>Distribution of Iron Boxes</p>
+    <ul>
+      <li> Beneficiary should belong to BC/MBC/DNCs and doing laundry work.</li>
+      <li>Parental income limit is increased as Rs. 1,00,000/- per annum w.e.f. 2021-22.</li>
+      <li>Age above 20 years.</li>
+    </ul>
+  </div>
+
+  <div class = "Scheme_free">
+      <p>Modern Laundry</p>
+     <div>
+       In the year 2022-23, a new scheme is introduced for setting up of 25 Modern Laundry Units at a
+       cost of Rs.75 lakh. Under the scheme, each unit consists of 10 numbers of pepole belonging to 
+       Backward Classes and Denotified Communities who are already engaged in laundry activites and 
+       Rs.3 lakh will be alloted to each unit. The Annual income ceiling of the beneficiaries for
+       availing this benifit should not exceed Rs.1 lakh. So far, Rs.12 lakhs have been alloted to establish
+       4 Modern Laundry Units. 
+     </div>
+    </div>
+
+    <div class = "Scheme_free" >
+        <p>Distribution of Motorised Sewing Machines</p>
+        <ul>
+          <li>The Beneficiary should to BC/MBC/DNCs.</li>
+          <li>Parental income limit is increased as Rs. 1,00,000/- per annum w.e.f. 2021-22.</li>
+          <li>Should have tailoring Knowledge.</li>
+          <li>Age:From 20 to 45 years.</li>
+          <li>Widow/ Deserted women can apply.</li>
+          <li>Both Male and Female are eligible to apply.</li>
+          <li>Those who already availed the benefit under this scheme shall also apply after completion of 
+            7 years.</li>
+        </ul>
+      </div>
+
+      <div class = "Scheme_free">
+        <p>Readymade Garment</p>
+       <div>
+         In the year 2022-23, a new scheme is introduced for setting up of 25 Readymade garment units at a cost 
+         of Rs.75 lakh . Under the scheme, each unit consists of 10 numbers of pepole belonging to Backward Classes,
+         Most Backward Classes and Denotified Communities who are already engaged in tailoring activites and Rs.3 lakh
+         will be alloted to each unit. The Annual income ceiling of the beneficiaries for availing this benefit should 
+         not exceed Rs.1 lakh.
+       </div>
+      </div>
+
+      <div class = "Scheme_free">
+          <p>Distribution of House Site Pattas</p>
+         <div>
+           People should not have own house site and should belong to BC, MBC and DNC. The individual's annual income 
+           limit is increased to Rs.1,00,000/- per annum w.e.f. 2021-22.
+         </div>
+        </div>
+</div>
+<!----------------------------------->
+<!--Scholorship schemes-->
+<div class="scholarship_scheme" id="scholarship_scheme_id">
+  <div class="clsoe_btn_div">
+    <button id="scholorship_clsoe_btn"><i class="fa-solid fa-square-xmark fa-xl" style="color: #cf0707c5;"></i></button></div>
+    <div style="display: flex; margin-top: 30px;">
+        <div class="scholorship_link_container">
+            <h2 >Scholorship Schemes</h2>
+            <a href="#scholorship_link_details_id" class="Scheme-link" id="pre-matric">Pre-matric scholarship scheme</a>
+            <a href="#scholorship_link_details_id2" class="Scheme-link" id="post-matric-school">Post-matric scholarship scheme (School students)</a>
+            <a href="#scholorship_link_details_id3" class="Scheme-link" id="post_matric_College">Post-matric scholarship scheme (College students)</a>
+            <a href="#" class="Scheme-link">Free Education scheme</a>
+            <ol>
+          <a href="#"><li>Degree courses</li></a>
+              <a href="#"><li>Diploma courses</li></a>
+             <a href="#"> <li>Professional courses</li></a>
+            </ol>
+            <a href="#" class="Scheme-link">Web enabled sanction of scholarship</a>
+            <a href="#" class="Scheme-link">Scholarship to students studying in Central Government  institution like IIM, IIM, IIIT, NIT 
+              and Central Universities</a>
+           <a href="#" class="Scheme-link"> Reimbursement of fee to the students studied in Government Schools and admitted in medical Courses under 7.5% 
+             preferential allotment seats
+          
+           </a>  
+          </div>
+  
+   <div class="scholorship_img" >
+    <div style="height: 100px; width: 100px;">
+        <img id="myImage" src="" alt="" >
+    </div> 
+    
+   </div>
+   
+    </div>
+    <div class="scholorship_link_details" id="scholorship_link_details_id">
+        <h2 >Pre-matric Scholarship Scheme</h2>
+        <div style="display:flex;">
+     <div>     
+  <p>  No fee (Tution/ Special fee/ Examination fee) is collected from the students studying in Tamil Medium in Government
+    Aided Schools. The Government have completely waived the payment of tuition fee for the students studying in English
+    Medium in Government and Government Aided Schools. Also payment of Exam Fees for the student studying in 10th (Tamil Medium)
+  is waived.
+  </p>
+  <h3>Exam Fee Reimbursement</h3>
+  <p>
+    The Examination Fee for the English Medium students studying in 10th standard in Government and Government Aided Schools is
+    reimbursed in full by this Department to the Directorate of Government Examination for BC, MBC & DNC students.
+  </p>
+  <h3>Condition</h3>
+  <p>
+    Backward Classes-Parental Annual Income should not exceed Rs.2.50 lakh. Most Backward Classes and Denotified Communities- No Condition.
+  </p></div>
+  <div>
+    <img src="img/edu_tree.png" height="400" width="400">
+  </div>
+        </div>
+    </div>
+  <!---->
+    <div class="scholorship_link_details" id="scholorship_link_details_id2">
+        <h2 >Post-matric Scholarship Scheme ( School Students)</h2>
+        <div style="display: flex;">
+            <div>
+                <p>  
+                    Under Post-matric Scholarship Scheme, Examination fees for the Backward Classes students studying in 11th and 12th standards
+                    in English Medium in Government and Government Aided schools are being reimbursed. This subject to the Condition that thier
+                    annual parental income should not exceed 2.5 lakh. For Most Backward Classes and Denotified Communities students examination
+                    fee is reimbursed without any condition. The Government has waived the payment of Tuition Fee and Special Fee to the students
+                    studying in Tamil and English Medium in Government and Government Aided schools. The Examination fees for 11th and 12th standard
+                    Tamil Medium students has also been waived.
+                  </p>
+            </div>
+            <div>
+                <img src="img/edu_tree.png" height="300" width="300">
+            </div>
+        </div>
+  
+    </div>
+    <!---->
+
+    <div class="scholorship_link_details" id="scholorship_link_details_id3" style="display: none;">
+      <h2 >Post-matric Scholarship Scheme ( Colleghe Students)</h2>
+      <div style="display: flex;">
+          <div>
+              <p>  
+                  Under Post-matric Scholarship Scheme,Scholarship are sanction to Backward Classes, Most Backward
+                  Classes and Denotified Communities students studying ITI, Diploma in polytechnics, Post Graduate,
+                  Professional and Ph.D. courses. Annual parental income should not exceed Rs. 2.5  Lakh to avail this 
+                  scholarship. Under the scheme, Tuition fee and Special Fee are sanctioned as fixed for the Government
+                   educational institution. Examination fee is sanctioned in full and Book Money as notified in the Scholarship
+                Notification. Students studying in the second shift in Government and Government aided colleges are also
+                 sanctioned scholarship by applying the same condition stipulated for students studying in the morning shift.
+                 In additon to the scholarship amount, Boarding and loading charges are sanctioned to students who are studying
+                 in Hostels attached to educational institution, at the enhanced rate of Rs.4000/-per year
+                  (Rs.400/- per month for 10 months in a year) for Under Graduate courses, Professional Courses, ITI/
+                  Diploma and Post Graduate courses from the year 2021-22.
+                  
+                  
+                </p>
+          </div>
+          <div>
+              <img src="img/edu_tree.png" height="300" width="300">
+          </div>
+      </div>
+
+  </div>
+    
+  
+  
+  
+  </div>  
+  
+<!---------------------------Admission Form---------------------------->
+<div class="admission_form" id="admission_form_id">
+  <div class="form_heading" >
+  <h1>Tamil Nadu Government ( தமிழ்நாடு அரசு )</h1>
+  <p>Department of Welfare of Backward Classes/ Department of Welfare of the Most Backward and Minority/ Department of Walfare of Minorities <br> 
+  ( பிற்படுத்தப்பட்டோர் நலத்துறை / மிகப்பிற்படுத்தப்பட்டோர் மற்றும்
+  சீர்மரபினர் நலத்துறை / சிறுபான்மையினர் நலத்துறை )</p>
+      
+  <h2> Application for admission in Government Hostel
+    <br>( அரசு விடுதியில் சேர்த்துக் கொள்ளப்படுவதற்கான விண்ணப்பம் )
+  </h2>
+</div>
+  <div style="border-top:1px solid #1f5142"></div>
+
+ <form id="addmission_form_container">   
+  <div class="form_container_details">
+  <ol>
+  <div style="display: flex;">
+    <div>  
+  <li>
+    <label>Applicant's Name ( விண்ணப்பதாரரின் பெயர் )</label><label class="star">* </label>
+    <input type="text" id="username">
+  </li><br>
+  <li>
+    <label>Male/ Female ( ஆண் / பெண் )</label><label class="star">* </label> 
+    <select id="stuGender">
+      <option >Select</option>
+      <option >Male ( ஆண் )</option>
+      <option>Female ( பெண் )</option>
+    </select> 
+  </li><br>
+  <li>
+    <label >Date of birth ( பிறந்த தேதி )</label><label class="star">* </label>
+    <input type="date" id="DateOfBirth" onchange="calculateAge()"> 
+  </li><br>  
+  <li>
+    <label >Age on the date of application
+      <br> ( விண்ணப்ப நாளன்று வயது )</label><label class="star">*  </label>
+    <input type="text" id="age" readonly>
+  </li>
+  </div>
+  <div style="margin:10px 120px;">
+    <img src="img/user.webp" height="130px" width="130px" id="profile-pic">
+    <p></p>
+  <input type="file" accept="image/jpeg,image/png, image/jpg" id="input-file" >
+  </div>
+  </div><br>
+  <li>
+    <ol type="a">
+      <li><label>Category ( இனம் )</label><label class="star">*  </label>
+      <select id="category">
+        <option>Select</option>
+        <option>BC ( பிற்படுத்தப்பட்டோர் )</option>
+        <option>MBC ( மிகப்பிற்படுத்தப்பட்டோர் )</option>
+        <option>DNC</option>
+        <option>SC</option>
+        <option>ST</option>
+        <option>Other Classes ( இதர வகுப்பினர் )</option>
+      </select></li><br>
+      <li><label>Caste ( சாதி ) </label><label class="star">*  </label>
+      <input type="text" id="caste"></li>
+    </ol>
+  </li>
+  <li>
+    <ol type="a">
+      <li><label>Whether there is any educational institution with in a distance of five Kilometers from the applicant's residence ?
+        <br>( விண்ணப்பம் செய்துள்ளவரது இருப்பிடத்திலிருந்து ஐந்து கிலோ
+        மீட்டர் தூரத்திற்குள் கல்வி நிலையம் ஏதேனும் உள்ளதா ? )
+      </label><label class="star">*  </label>
+      <select id="qus">
+        <option>Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select></li><br>
+      <li><label>If so, Why he has not joined  the educational institution ?<br>
+      ( அவ்வாறு இருப்பின் ஏன் அக்கல்வி நிலையத்தில் சேரவில்லை )</label><label class="star">*  </label>
+    <input type="text" id="ans"></li>
+    </ol>
+  </li><br>
+  <li>
+    <label>Name of parent/guardian ( பெற்றோர் / பாதுகாவலர் பெயர் )</label><label class="star">*  </label>
+    <input type="text" id="parent">
+  </li><br>
+  <li> Full Address ( சொந்த இடம் / முழு முகவரி)<label class="star">*  </label><br> <br>
+  <ol type="a">
+    <li>
+<label>Village ( கிராமம் )</label><label class="star">*  </label>
+<input type="text" id="Village">
+    </li><br>
+    <li>
+      <label>Aera ( வட்டம் )</label><label class="star">*  </label>
+      <input type="text" id="area">
+          </li><br> 
+          <li>
+            <label>District ( மாவட்டம் )</label><label class="star">*  </label>
+            <input type="text" id="district">
+                </li><br>             
+  </ol></li>
+ <li>
+  <label>Annual income of parent/guardian ( பெற்றோர் / பாதுகாவலரது ஆண்டு வருமானம் )</label><label class="star">*  </label>
+  <select style="height: 25px; width: 150px;" id="income">
+    <option>Select</option>
+    <option>Below One Lakh</option>
+    <option>1 Lakh</option>
+    <option>2 Lakh</option>
+    <option>3 Lakh</option>
+    <option>4 Lakh</option>
+    <option>5 Lakh</option>
+    <option>More Than Five Lakh</option>
+ </select>   
+ </li> <br>
+ <li><label>Name of class attended last year and Name of the
+  educational institution <br> ( சென்ற ஆண்டு படித்த வகுப்பு மற்றும் பயின்ற கல்வி நிலையத்தின்
+  பெயர் )</label><label class="star">*  </label>
+  <input type="text" id="insti_name">
+  <br><br>
+  <label>Marks obtained by the students in the subject category in the last year final examination <br>
+  ( சென்ற ஆண்டு இறுதித் தேர்வில் மாணவர் மாணவியர் பாடப் பிரிவில் பெற்ற மதிப்பெண்கள் )</label><br>
+<br>
+  <table  class="addmission_form_table">
+  <tr>
+    <th>Course  ( பாடப்பிரிவு ) </th><th> Marks ( மதிப்பெண்கள் )</th>
+  </tr>  
+  <tr>
+    <td><input type="text" class="input_form" id="course1"id="course1"></td><td><input type="text" id="Marks1"></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="course2"></td><td><input type="text" id="Marks2"></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="course3"></td><td><input type="text" id="Marks3"></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="course4"></td><td><input type="text" id="Marks4"></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="course5"></td><td><input type="text" id="Marks5"></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="course6"></td><td><input type="text"id="Marks6"></td>
+  </tr>    
+  <tr>
+    <td><input type="text" id="course7"></td><td><input type="text" id="Marks7"></td>
+  </tr>  
+  <tr>
+    <th>Toatl ( மொத்தம் )</th><th><input type="text" id="totalMarks"></th>
+      </tr>  
+  <tr>
+    <th>Average ( சராசரி )</th><th><input type="text" id="avgMarks"></th>
+  </tr> 
+  </table>
+</li><br>
+ <li>
+<label>Where did you stay last year ? ( சென்ற ஆண்டு எங்கே தங்கியிருந்தார் )</label><label class="star">*  </label>  
+<input type="text" id="qus2">
+ </li><br>
+<li>
+  <label> Full address of the educational institution enrolled in this academic year<br>
+  ( இந்த கல்வியாண்டில் சேர்ந்துள்ள கல்வி நிறுவனத்தின் பெயர் முழு முகவரி )</label><label class="star">*  </label>  
+  <input type="text" id="enrolledAddress">
+</li> <br>
+<li>
+<label> Date of admission of the student to the educational institution<br> ( மாணவர் கல்வி நிலையத்தில் சேர்க்கப்பட்ட தேதி )
+  </label><label class="star">*  </label>
+<input type="date" id="admissionDate">  
+</li><br>
+<li>
+ <label>Description of the course ( படிப்பின் விவரம் )  </label><label class="star">*  </label> 
+ <input type="text" id="courseName"> 
+</li><br>
+<li>
+  <label></label>Duration of study ( படிப்பின் காலா அளவு )<label class="star">*  </label>  
+  <input type="text" id="duration"> 
+</li><br>
+<li>
+  <label>Upload the document copies of the below mentioned certificates 
+    <br>( கீழ்க்குறிப்பிட்டுள்ள சான்றிதழ்களின் சான்றொப்பமிட்ட நகல்களை பதிவேற்றவும்)</label><label class="star">*  </label> <br><br>
+<ol type="a">
+  <li>
+    <label>Caste Certificate ( சாதிச் சான்று )</label><label class="star">*</label>
+    <input type="file" accept="image/jpeg,image/png, image/jpg, .pdf" id="caste_Certificate">
+  </li><br>
+  <li>
+  <label>Income Certificate ( வருமானச் சான்று )  </label><label class="star">*</label>
+  <input type="file" accept="image/jpeg,image/png,image/jpg," id="Income_certificate">
+</li>
+<br><li>
+<label>School Transfer Certificate ( பள்ளி மாற்றுச் சான்று )</label><label class="star">*</label>
+<input type="file" accept="image/jpeg,image/png, image/jpg" id="Transfer_Certificate">
+</li><br>
+<li>
+<label>Marksheet ( மதிப்பெண் பட்டியல் )</label><label class="star">*</label>
+<input type="file" accept="image/jpeg,image/png, image/jpg" id="Marksheet_certificate">
+</li><br>
+<li>
+<label>Character Certificate ( நடத்தை சான்று) </label><label class="star">*</label>
+<input type="file" accept="image/jpeg,image/png, image/jpg" id="Character_certificate">
+</li> 
+</ol>    
+</li>
+
+ 
+</ol>  
+<div style="padding-top: 40px; margin: 0;">
+    <h3>  Declaration:</h3>
+    <p>
+        <input type="checkbox">      
+        I hereby declare that the information provided above is true and accurate to the best of my knowledge.
+        ( மேலே கொடுக்கப்பட்ட தகவல்கள் எனக்குத் தெரிந்த வரையில் சரியானவை எனவும் , உண்மையானவை எனவும் உறுதி கூறுகிறேன் )
+          </p>
+</div>
+<div style="text-align: center; margin-bottom: 100px;">
+    <button class="form_sumbit_btn" type="submit" id="submit">Submit</button>
+</div>
+</form>
+</div>
+</div>
+
+ <!---------------------------------------------Warden Page----------------------------->
+ <div class="warden" id="warden_id">
+ <div class="warden_conatainer">
+    <div class="warden_conatainer_left">
+ <a href="#"  id="Waiting-student">Waiting Students</a>  
+ <a href="#">Staffs Attendence</a> 
+ <a href="#">Students Attendence</a> 
+ <a href="#">Available Room/Bed</a> 
+ <a href="#">Current Students</a>
+ <a href="#">Mess</a>
+    </div>
+<div class="warden_conatainer_right">
+  <div>
+    <table border="1" class="formDataTable">
+      <tbody id="stdataTable">
+
+      </tbody>
+    </table>
+  </div>
+  <div class="selected_student">
+
+  </div>
+
+   </div> 
+  </div>
+
+ </div>
+
+
+ <!---------------------------------list of BC, MBC, DNC Cast------------------------->
+ <div class="Cast_list">
+    <!---Bc---->
+  <h2 class="link_Page_heading editablePara1" contenteditable="false"></h2>
+ <div class="category_select_area">
+  Select Category:<i class="fa-solid fa-user "></i>
+  <select id="userCategory" onchange="showTable()">
+    <option >Select</option>
+      <option value="BC">Backward Classes</option>
+      <option value="BCM">Backward Classes Muslims</option>
+      <option value="MBC">Most Backward Classes</option>
+      <option value="DNC">Denotified Communities</option>
+  </select></div>
+
+  <div id="bcTable" style="display: none;">
+      <table border="1" id="" class=" cast_list_table Kallar_table">
+        <thead>
+            <tr>
+                <th class="editablePara1"></th>
+                <th class="editablePara1"></th>
+            </tr>
+        </thead>
+        <tbody class="t_body">
+            <!-- Rows will be added dynamically -->
+        </tbody>
+    </table>
+    <br>
+    <div class="table_response_btn">
+    <button class="addRowButton2">Add Row</button>
+    <button class="editTableButton2">Edit Table</button>
+    <button class="saveButton2">Save</button>
+    </div>
+  </div>
+
+  <div id="bcmTable" style="display: none;">
+      <table border="1" class="cast_list_table2 Kallar_table">
+        <thead>
+          <tr>
+            <th class="editablePara1"></th>
+            <th class="editablePara1"></th>
+          </tr>
+        </thead>
+        <tbody class="t_body">
+          <!---row added-->
+        </tbody>
+        </tbody>
+      </table>
+      <div  class="table_response_btn">
+        <button class="AddRowBtn2">Add Row</button>
+        <button class="EditRow2">Edit Table</button>
+        <button class="SaveTable2">Save</button>
+      </div>      
+    
+  </div>
+
+  <div id="mbcTable" style="display: none;">
+    <table border="1" class="cast_list_table3 Kallar_table">
+      <thead>
+        <tr>
+          <th class="editablePara1"></th>
+          <th class="editablePara1"></th>
+        </tr>
+      </thead>
+      <tbody class="t_body">
+        <!---row added-->
+      </tbody>
+      </tbody>
+    </table>
+    <div  class="table_response_btn">
+      <button class="AddRowBtn3">Add Row</button>
+      <button class="EditRow3">Edit Table</button>
+      <button class="SaveTable3">Save</button>
+    </div>
+  
+</div>
+
+<div id="dncTable" style="display: none;">
+  <table border="1" class="cast_list_table4 Kallar_table">
+    <thead>
+      <tr>
+        <th class="editablePara1"></th>
+        <th class="editablePara1"></th>
+      </tr>
+    </thead>
+    <tbody class="t_body">
+      <!---row added-->
+    </tbody>
+    </tbody>
+  </table>
+  <div  class="table_response_btn">
+    <button class="AddRowBtn4">Add Row</button>
+    <button class="EditRow4">Edit Table</button>
+    <button class="SaveTable4">Save</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+  
+
+
+
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
